@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .picture {
+            display: inline-block;
+            visibility: hidden;
+        }
+        [data-pycs-done="true"] .picture[data-pycs-width] img {
+            width: auto;
+            height: 100%;
+        }
+        [data-pycs-done="true"] .picture[data-pycs-width] {
+            /*overflow: hidden;*/
+            visibility: visible;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="pycs-layout.jquery.js"></script>
+    <script src="angular-pycs-layout.js"></script>
+    <script src="test-app.js"></script>
+</head>
+<body ng-app="testApp">
+<div ng-controller="mainCtrl">
+    <input type="range" min="10" max="1000" step="1" ng-model="height"><span ng-if="height">{{height}}</span>
+    <div pycs-layout="myList" ideal-height="height"></div>
+</div>
+</body>
+</html>

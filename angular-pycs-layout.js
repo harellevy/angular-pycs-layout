@@ -9,7 +9,7 @@
                 pycsLayout: '=',
                 idealHeight: '=?'
             },
-            templateUrl: 'pycs-tmp.html',
+            template: '<div class="picture" ng-repeat="pic in pycsLayout track by $index"><img ng-src="{{pic.img}}" alt=""></div>',
             link: function(scope, elem, attr){
                 function updateListGallery(){
 
@@ -32,10 +32,11 @@
                                 gutter: 0
 
                             });
-                        },1000);
+                        },100);
                     }
                 })
             }
         }
     }]);
+
 })();

@@ -1,4 +1,4 @@
-# angularJs-pycs-layout
+# angular-pycs-layout
 
 AngularJs wrapper for pycs-layout jquery plugin.
 
@@ -18,8 +18,8 @@ and include in your html these scripts
 ```
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="pycs-layout.jquery.js"></script>
-<script src="angular-pycs-layout.js"></script>
+<script src="bower_components/angular-pycs-layout/pycs-layout.jquery.js"></script>
+<script src="bower_components/angular-pycs-layout/angular-pycs-layout.js"></script>
 ```
 
 ### Usage

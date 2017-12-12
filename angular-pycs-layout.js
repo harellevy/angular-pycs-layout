@@ -9,7 +9,7 @@
                 pycsLayout: '=',
                 idealHeight: '=?'
             },
-            template: '<div class="picture" ng-repeat="pic in pycsLayout track by $index"><img ng-src="{{pic.img}}" alt=""></div>',
+            template: '<div class="pycs-wrapper"><div class="picture" ng-repeat="pic in pycsLayout track by $index"><img ng-src="{{pic.img}}" alt=""></div></div>',
             link: function(scope, elem, attr){
                 function updateListGallery(){
 
